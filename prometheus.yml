@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "gin_service"
+    static_configs:
+      - targets: ["gin_service:8080"]
